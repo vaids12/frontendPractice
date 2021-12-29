@@ -19,7 +19,7 @@
             <ul class="menuItems">
                 <li><a href="#box">Control Panel</a></li>
                 <li><a href="#spalvos">Spalvų paletė</a></li>
-                <li><a href="#form">Gyventojų surašymas</a></li>
+                <li><a href="#input">Gyventojų surašymas</a></li>
 
 
             </ul>
@@ -64,10 +64,35 @@
         </div>
     </section>
 
+    <section id="input">
+        <h2>Gyventojų surašymas</h2>
 
-    <div id="form">
 
-    </div>
+        <form  action="">
+            <div id="form">
+                <div id="row">
+                <label for="firstName">Vardas: </label>
+                <input type="text" id="firstName">
+            </div>
+                <div id="row">
+                    <label for="lastName"> Pavardė: </label>
+                <input type="text" id="lastName">
+                </div>
+                <div id="row" >
+                <label for="birthDate">Gimimo metai: </label>
+                <input type="year" id="birthDate" placeholder="yyyy">
+            </div>
+            <div  id="row">
+                 <input type="button" value="Įvesti">
+            </div>
+               
+            </div>
+        </form>
+
+
+
+    </section>
+
 
 
 

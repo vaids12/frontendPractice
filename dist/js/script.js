@@ -85,6 +85,7 @@ $(document).ready(function () {
 
     $("#color5").css({
         "background-color": color5,
+        
     });
 
     $("#color1").text(color1);
