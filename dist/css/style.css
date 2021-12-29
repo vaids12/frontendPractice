@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(197, 192, 192);
+    margin: 0;
+    padding: 0;
+}
+
+/* **************** */
+#navbar {
+
+    width: 100%;
+    height: 60px;
+    background-color: #3c3ff8;
+    top: 0;
+    left: 0;
+    /* transition: 0.3s ease-in-out; */
+    z-index: 5;
+    position: fixed;
+}
+
+
+
+
+
+
+
+
+.menuItems {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+    flex-wrap: wrap;
+}
+
+.menuItems li {
+    margin: 0 10px;
+    width: 150px;
+    text-align: center;
+
+
+}
+
+.menuItems li a {
+    text-decoration: none;
+    color: white;
+}
+
+.iconButton {
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 6;
+
+
+
+
+}
+
+.iconButton i {
+    color: white;
+    font-size: 60px;
+
+}
+
+/* ******************************** */
+
+#box {
+    margin: 150px 100px 50px 100px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 2px 2px 10px black;
+
+}
+
+#box1 {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#box1 h2 {
+    padding: 5px 10px;
+}
+
+.buttonDiv {
+    height: 30px;
+    width: 80px;
+    padding: 5px 10px;
+    margin: 0 0 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+    border-style: none;
+    background-color: rgb(209, 201, 201);
+    box-shadow: 2px 2px 5px black;
+}
+
+
+
+
+#square {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 40px;
+    border-radius: 10px;
+    right: 50px;
+    top: 50px;
+    position: absolute;
+}
+
+
+
+#color {
+    margin: 150px 100px 50px 100px;
+    height: 300px;
+    border-radius: 20px;
+    background-color:white;
+    box-shadow: 2px 2px 10px black;
+}
+
+#color h2 {
+    margin: 20px;
+    padding-top: 30px;
+}
+    
+
+#colorRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px;
+    
+}
+
+.colorDiv {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 80px;
+    background-color: black;
+    
+
+}
+
+
+
+
+
+#form {
+    margin: 150px 100px 50px 100px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+
+    box-shadow: 2px 2px 10px black;
+}
