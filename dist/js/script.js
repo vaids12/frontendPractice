@@ -73,7 +73,7 @@ $(document).ready(function () {
 
     $(".iconButton ").click(function (e) {
         e.preventDefault();
-        $("#navbar").toggle(300);
+        $(".navbar").toggleClass("navbarShow");
 
     });
 
@@ -122,12 +122,12 @@ $(document).ready(function () {
     let lastNames = [];
     let birthDates = [];
     let indexes = [];
-    let index = 1;
+    let index = 0;
 
     $("#submit").click(function (e) {
         e.preventDefault();
 
-        let name = $("#firstName").val();
+        let firstName = $("#firstName").val();
         let lastName = $("#lastName").val();
         let birthDate = $("#birthDate").val();
         let year = new Date();
@@ -156,10 +156,10 @@ $(document).ready(function () {
             index = index + 1;
 
 
-            let tr = "<tr class = 'duomenys'><td>" + indexes[indexes.length - 1] + "</td><td>" + firstNames[firstNames.length - 1] + "</td>" + "<td>" + lastNames[lastNames.length - 1] + "</td>" + "<td>" + birthDates[birthDates.length - 1] + "</td></tr>";
+            let tr = "<tr><td>" + (indexes[indexes.length-1 ]+1)+ "</td><td>" + firstNames[firstNames.length - 1] + "</td>" + "<td>" + lastNames[lastNames.length - 1] + "</td>" + "<td>" + birthDates[birthDates.length - 1] + "</td></tr>";
 
 
-            $("#data").append(tr);
+            $("#table").append(tr);
 
             $("#firstName").val("");
             $("#lastName").val("");
